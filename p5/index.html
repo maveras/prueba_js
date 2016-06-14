@@ -10,45 +10,31 @@
 
     
   <style type="text/css">
-    .izqs {
-      width:30%;
-      display:inline-block;
+    .cuadrado {
+      min-width: 50px;
+      min-height: 50px;
+      border: solid black 3px;
+      background-color: blue;
+      position: relative;
+      display: block;
+      top:200px;
+      left:200px;
+      width: 50px;
+      height:50px;
+      
 
       }
+
     </style>
   <body>
     
-   <!-- Se pide crear una página que permita al usuario poner texto y darle estilo, para eso tendrá un textarea donde
-podrá escribir, todo lo que escriba debe aparecer como texto a la derecha.
-Además dispondrá de los siguientes controles que modificarán las propiedades del texto a la derecha.-->
-<!-- -  Un  selector  de  colores.
-- Un  input que permita definir el  tamaño  del texto
-- Un  input que permita definir la  tipografía
+   <!-- SCrear un cuadradro en pantalla de color, con las teclas de flechas derecha e izquierda se deberá poder mover
+el cuadrado 50px en la dirección respectiva.
 -->
-<div id="izq" class="izqs">
-  <label for="texto">Ingrese texto</label>
-  <br>
-  <input type="text" id="texto" value="">
-  <br>
 
-<label for="texto">Seleccione color</label>
-<br>
-  <input type="color" class="" value="" id="color">
-  <br>
-  <label for="texto">Seleccione tamaño letra</label>
-  <br>
-  <input type="number" value="16" id="tam_letra">
-  <br>
-  <select name="tipo" id="tipografia">
-    <option value="Times New Roman">Times New Roman</option>
-    <option value="Arial">Arial</option>
-  </select>
-<br>
-<button id="boton"> Modificar </button>
+<div id="cuadrado" class="cuadrado">
+  
 </div>
 
-<div id="derecha" class="derecha">
-    <p id="parrafo"></p>
-</div>
   </body>
   </html>
